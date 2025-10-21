@@ -12,8 +12,8 @@ def get_letters_count(book_text):
             letter_count[char] = 1
     print(letter_count)
     return letter_count
-def sort_on(letter_count):
-    return letter_count.isalpha()["num"]
+def sort_on(items):
+    return items["num"]
 def sorted_letter_count(letter_count):
         list_of_dicts = []
         for letter in letter_count:
@@ -24,4 +24,6 @@ def sorted_letter_count(letter_count):
                  }
             list_of_dicts.append(split_dict)
         print(list_of_dicts)
+        sorted_list = list_of_dicts.sort(reverse=True, key=sort_on)
+        print(sorted_list)
 
