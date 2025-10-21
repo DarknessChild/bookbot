@@ -15,6 +15,6 @@ def main():
     sorted_letter_count(letter_count)
 print("============ BOOKBOT ============")
 print(f"Analyzing book found at {book_location"})
-print(”----------- Word Count ----------")
+print("----------- Word Count ----------")
 
 main()
