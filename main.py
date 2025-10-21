@@ -10,5 +10,6 @@ def main():
     book_text = get_book_text("books/frankenstein.txt")
     get_num_words(book_text)
     letter_count = get_letters_count(book_text)
+    print(letter_count)
     sorted_letter_count(letter_count)
 main()
