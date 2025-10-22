@@ -11,7 +11,6 @@ def main():
     book_text = get_book_text(book_location)
     get_num_words(book_text)
     letter_count = get_letters_count(book_text)
-    print(letter_count)
     sorted_letter_count(letter_count)
 print("============ BOOKBOT ============")
 print(f"Analyzing book found at {book_location}")

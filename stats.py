@@ -22,8 +22,10 @@ def sorted_letter_count(letter_count):
                  "char" : letter,
                  "num" : count
                  }
+            print(type(split_dict["num"]))
             list_of_dicts.append(split_dict)
         print(list_of_dicts)
-        sorted_list = list_of_dicts.sort(reverse=True, key=sort_on)
-        print(sorted_list)
+        list_of_dicts.sort(reverse=True, key=sort_on)
+        final_list = list_of_dicts.isalpha()
+        print(final_list)
 
