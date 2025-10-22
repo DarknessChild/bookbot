@@ -26,6 +26,5 @@ def sorted_letter_count(letter_count):
             list_of_dicts.append(split_dict)
         print(list_of_dicts)
         list_of_dicts.sort(reverse=True, key=sort_on)
-        final_list = list_of_dicts.isalpha()
-        return final_list
+        return list_of_dicts
 

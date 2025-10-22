@@ -9,11 +9,19 @@ def get_book_text(filepath):
 def main():
     book_location = "books/frankenstein.txt"
     book_text = get_book_text(book_location)
-    get_num_words(book_text)
+    words = get_num_words(book_text)
     letter_count = get_letters_count(book_text)
-    sorted_letter_count(letter_count)
-print("============ BOOKBOT ============")
-print(f"Analyzing book found at {book_location}")
-print("----------- Word Count ----------")
+    sorted_letters = sorted_letter_count(letter_count)
+    print("============ BOOKBOT ============")
+    print(f"Analyzing book found at {book_location}")
+    print("----------- Word Count ----------")
+    print(words)
+    print("--------- Character Count -------")
+    for letter in sorted_letters:
+        if sorted_letters["char"].isalpha():
+            print(f"{sorted_letters['char']}: {sorted_letters['num']}")
+            continue
+        else:
+            continue
 
 main()
