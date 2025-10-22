@@ -25,7 +25,5 @@ def main():
             if letter["char"].isalpha():
                 print(f"{letter['char']}: {letter['num']}")
                 continue
-            else:
-                continue
 
 main()
