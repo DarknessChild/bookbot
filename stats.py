@@ -1,7 +1,13 @@
+def get_book_text(filepath):
+    with open(filepath) as f:
+        file_contents = f.read()
+    return file_contents
+
 def get_num_words(book_text):    
     word_list = book_text.split()
     num_words = len(word_list)
     return(f"Found {num_words} total words")
+
 def get_letters_count(book_text):
     letter_count = {}
     for char in book_text:
@@ -11,8 +17,10 @@ def get_letters_count(book_text):
         else:
             letter_count[char] = 1
     return letter_count
+
 def sort_on(items):
     return items["num"]
+
 def sorted_letter_count(letter_count):
         list_of_dicts = []
         for letter in letter_count:
