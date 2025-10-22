@@ -1,7 +1,7 @@
 def get_num_words(book_text):    
     word_list = book_text.split()
     num_words = len(word_list)
-    print(f"Found {num_words} total words")
+    return(f"Found {num_words} total words")
 def get_letters_count(book_text):
     letter_count = {}
     for char in book_text:
@@ -27,5 +27,5 @@ def sorted_letter_count(letter_count):
         print(list_of_dicts)
         list_of_dicts.sort(reverse=True, key=sort_on)
         final_list = list_of_dicts.isalpha()
-        print(final_list)
+        return final_list
 
