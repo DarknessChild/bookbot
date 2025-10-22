@@ -1,3 +1,4 @@
+"""Main module for BookBot application."""
 import sys
 from stats import get_book_text
 from stats import get_num_words
@@ -5,6 +6,7 @@ from stats import get_letters_count
 from stats import sorted_letter_count
 
 def main():
+    """Main function to run the BookBot analysis."""
     if len(sys.argv) !=2:
         print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
@@ -22,8 +24,6 @@ def main():
         for letter in sorted_letters:
             if letter["char"].isalpha():
                 print(f"{letter['char']}: {letter['num']}")
-                continue
-            else:
                 continue
 
 main()
