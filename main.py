@@ -18,8 +18,8 @@ def main():
     print(words)
     print("--------- Character Count -------")
     for letter in sorted_letters:
-        if sorted_letters["char"].isalpha():
-            print(f"{sorted_letters['char']}: {sorted_letters['num']}")
+        if letter["char"].isalpha():
+            print(f"{letter['char']}: {letter['num']}")
             continue
         else:
             continue
